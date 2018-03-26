@@ -64,7 +64,7 @@ app.get('/about',(req,res) => {
 });
 
 app.get('/project', (req, res) =>{
-    res.render('project.hbs', {
+    res.render('projects.hbs', {
         myMessage: 'This is my project portfolio'
     });
 });
