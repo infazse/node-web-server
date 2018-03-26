@@ -63,6 +63,12 @@ app.get('/about',(req,res) => {
     });
 });
 
+app.get('/project', (req, res) =>{
+    res.render('project.hbs', {
+        myMessage: 'This is my project portfolio'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage : 'Unable to load data'
